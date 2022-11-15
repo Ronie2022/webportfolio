@@ -1,0 +1,58 @@
+/*CSS Reset Rule*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Google Font*/
+
+body {
+
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*#bg-image {
+	min-height: 100vh;
+	background-image: url(./image/background.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: cover;
+	background-attachment: scroll;
+	background-color: black;
+	background-color: rgba(0, 0, 0, 0.5);
+}*/
+
+.portfolio {
+	padding-top: 300px;
+	padding-left: 50px ;
+	text-align: left;
+	font-weight: bold;
+}
+.title {
+	font-size: 5rem;
+}
+
+.subtitle {
+	font-size: 3rem;
+}
+
+footer {
+	margin: 1rem;
+	text-align: center;
+}
+
+#pre-footer {
+	padding: 0.8rem;
+	background-color: #002540;
+}
+#pre-footer div {
+	color: white;
+	display: inline-block;
+	vertical-align: top;
+	min-height: 50px;
+	width: 18%;
+	text-align: left;
+
+
+}
