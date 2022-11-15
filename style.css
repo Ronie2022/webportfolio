@@ -12,47 +12,36 @@ body {
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
-/*#bg-image {
+.portfolio {
+
+	text-align: center;
+	font-weight: bold;
 	min-height: 100vh;
-	background-image: url(./image/background.jpeg);
+	background-color: rgba(0, 0, 0, 0.5);
+
+}
+.title {
+	font-size: 8vh;
+}
+
+.subtitle {
+	font-size: 4vh;
+}
+
+footer {
+	text-align: center;
+}
+
+#bg-image {
+
+	min-height: 100vh;
+	background-image: url(https://cdn-media-2.freecodecamp.org/w1280/5f9c9b61740569d1a4ca2b7b.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: cover;
 	background-attachment: scroll;
-	background-color: black;
-	background-color: rgba(0, 0, 0, 0.5);
-}*/
-
-.portfolio {
-	padding-top: 300px;
-	padding-left: 50px ;
-	text-align: left;
-	font-weight: bold;
-}
-.title {
-	font-size: 5rem;
 }
 
-.subtitle {
-	font-size: 3rem;
-}
-
-footer {
-	margin: 1rem;
-	text-align: center;
-}
-
-#pre-footer {
-	padding: 0.8rem;
-	background-color: #002540;
-}
-#pre-footer div {
-	color: white;
-	display: inline-block;
-	vertical-align: top;
-	min-height: 50px;
-	width: 18%;
-	text-align: left;
 
 
-}
+

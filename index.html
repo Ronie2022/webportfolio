@@ -24,7 +24,7 @@
 	<!-- Start of Navbar -->
 
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-	  <a class="navbar-brand" href="#"><i class="fa-sharp fa-solid fa-house"></i></a>
+	  <a class="navbar-brand" href="#home"><i class="fa-sharp fa-solid fa-house"></i></a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -32,16 +32,16 @@
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    <ul class="navbar-nav ml-auto">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">About Me</a>
+	        <a class="nav-link" href="#profile">About Me</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Projects</a>
+	        <a class="nav-link" href="#projects">Projects</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Contact</a>
+	        <a class="nav-link" href="#contact">Contact</a>
 	      </li>
 	    </ul>
 	  </div>
@@ -51,10 +51,10 @@
 
 	<!-- Start of Landing Page -->
 	
-	<section>
-		<div class="container-fluid bg-dark text-light min-vh-100 mt-5">
-			<div class="row">
-				<div class="portfolio col-6">
+	<section id="home">
+		<div class="container-fluid bg-dark text-light min-vh-100 mt-5 p-0">
+			<div id="bg-image">
+				<div class="container-fluid portfolio">
 					<div class="title">Online Portfolio</div>
 					<div class="subtitle">Web Development</div>
 				</div>
@@ -66,7 +66,7 @@
 	<!-- End of Landing Page -->
 
 		<!-- Start of About Me Section -->
-	<section>
+	<section id="profile">
 	
 		<div class="container-fluid bg-dark text-light min-vh-100 pt-5">
 			<div>
@@ -74,7 +74,7 @@
 			</div>
 			
 			
-			<img class="rounded-circle" width="250" height="250" src="./image/profile.jpg">
+			<img class="rounded-circle p-3 mt-5" width="250" height="250" src="https://superawesomevectors.com/wp-content/uploads/2016/02/businessman-with-suit-flat-vector-icon-800x566.jpg">
 
 			<h1>Ronie John Timbal</h1>
 			<h3>Full-Stack Developer</h3>
@@ -99,8 +99,8 @@
 	<!-- End of About Me Section -->
 
 	<!-- Start of Project/Gallery Section -->
-	<section>
-		<div class="container-fluid bg-dark text-light min-vh-100 pt-5">
+	<section id="projects">
+		<div class="container-fluid bg-dark text-light min-vh-100 pt-5" >
 			<h1>Projects</h1>
 			<div class="row d-none d-md-block mt-md-5">
 		 	<div class="offset-xl-3 col-xl-6">
@@ -112,23 +112,23 @@
 		 		  </ol>
 		 		  <div class="carousel-inner">
 		 		    <div class="carousel-item active">
-		 		      <img src="https://place-puppy.com/500x300" class="d-block w-100" alt="...">
+		 		      <img src="./image/project-one.png" class="d-block w-100" alt="...">
 		 		      <div class="carousel-caption d-none d-md-block">
-		 		        <h5>First slide label</h5>
+		 		        <h5>Capstone Project 1</h5>
 		 		        <p>Some representative placeholder content for the first slide.</p>
 		 		      </div>
 		 		    </div>
 		 		    <div class="carousel-item">
-		 		      <img src="http://placekitten.com/500/300" class="d-block w-100" alt="...">
-		 		      <div class="carousel-caption d-none d-md-block">
-		 		        <h5>Second slide label</h5>
+		 		      <img src="https://www.europarl.europa.eu/resources/library/images/20180612PHT05623/20180612PHT05623-ml.jpg" class="d-block w-100" alt="...">
+		 		      <div class="carousel-caption d-none d-md-block text-dark">
+		 		        <h5>On-going Project</h5>
 		 		        <p>Some representative placeholder content for the second slide.</p>
 		 		      </div>
 		 		    </div>
 		 		    <div class="carousel-item">
-		 		      <img src="https://placebear.com/500/300" class="d-block w-100" alt="...">
-		 		      <div class="carousel-caption d-none d-md-block">
-		 		        <h5>Third slide label</h5>
+		 		      <img src="https://www.slidegeeks.com/pics/dgm/l/u/Upcoming_Projects_Plan_Objectives_Ppt_PowerPoint_Presentation_Complete_Deck_With_Slides_Slide_1-.jpg" class="d-block w-100" alt="...">
+		 		      <div class="carousel-caption d-none d-md-block text-dark">
+		 		        <h5>Upcoming Project</h5>
 		 		        <p>Some representative placeholder content for the third slide.</p>
 		 		      </div>
 		 		    </div>
@@ -150,32 +150,25 @@
 	<!-- End of Project/Gallery Section -->
 
 	<!-- Start of Contact Section -->
-	<section>
-		<div class="container-fluid bg-dark text-light min-vh-100 pt-5">
+	<section id="contact">
+		<div class="container-fluid bg-dark text-light min-vh-100 pt-5 pb-5">
 			<!-- Start of Contacts Section -->
 			<div class="text-light">
 				<h2 class="p-3">Contact Me</h2>
 
-				<div class="container-fluid bg-primary col-sm-12 col-md-8 col-xl-4 pb-3">
+				<div class="container-fluid bg-danger pb-4 border rounded">
 					<form>
 					  <div class="form-group">
 					    <label for="name">Name</label>
-					    <input type="text" class="form-control" placeholder="Your Name">
+					    <input type="text" class="form-control" placeholder="Your Name" required>
 					  </div>
 					  <div class="form-group">
 					    <label for="email">Email Address</label>
-					    <input type="email" class="form-control" placeholder="name@example.com">
+					    <input type="email" class="form-control" placeholder="name@example.com" required>
 					  </div>
 					  <div class="form-group">
 					    <label for="contactNumber">Contact Number</label>
 					    <input type="text" class="form-control" placeholder="+63 900 000 0000">
-					  </div>
-					    <div class="form-group">
-					      <label for="concern">Concern</label>
-					      <select id="inputState" class="form-control">
-					        <option selected>Quotation</option>
-					        <option>...</option>
-					      </select>
 					  </div>
 					   <div class="form-group">
 					     <label for="message">Message</label>
@@ -235,24 +228,11 @@
 
 
 			</div>
-			<!-- End of Contacts Section -->
 			
 		</div>
 	</section>
-	<!-- Start of Contact Section -->
-
-	<section id="pre-footer">
-		<div>
-		   <h3>Follow Us</h3>
-		   <p>Facebook</p>
-		   <p>LinkedIn</p>
-		</div>
-		<div>
-		   <h3>Contact Us</h3>
-		   <p>0916 873 1296 (Globe)</p>
-		   
-		</div>
-	</section>
+	<!-- End of Contacts Section -->
+			
 
 	<!-- Start of Footer Section -->
 	<section>
