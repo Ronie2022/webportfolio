@@ -5,10 +5,6 @@
 	box-sizing: border-box;
 }
 
-html, body {
-	height: 100%;
-	width: 100%;
-}
 
 /*Google Font*/
 
@@ -20,7 +16,7 @@ body {
 .portfolio {
 	text-align: center;
 	font-weight: bold;
-	min-height: 95vh;
+	min-height: 100vh;
 	background-color: rgba(0, 0, 0, 0.5);
 	background-position: cover;
 
@@ -42,13 +38,13 @@ footer {
 
 #bg-image {
 
-	max-width: 100%;
-	max-height: 100%;
+	width: 100%;
+	height: auto ;
 	background-image: url(https://cdn-media-2.freecodecamp.org/w1280/5f9c9b61740569d1a4ca2b7b.jpg);
 	background-repeat: no-repeat;
-	background-size: auto;
-	background-position: cover;
+	background-size: cover;
 	background-attachment: fixed;
+	background-position: inherit;
 }
 
 #back-to-top {
