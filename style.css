@@ -2,56 +2,126 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	box-sizing: borderbox;
 }
 
-
-/*Google Font*/
-
-body {
-
-	font-family: 'Roboto Condensed', sans-serif;
-}
-
-.portfolio {
-	text-align: center;
-	font-weight: bold;
-	min-height: 100vh;
-	background-color: rgba(0, 0, 0, 0.5);
-	background-position: cover;
+/*Fonts*/
+*
+{
+	font-family: "Anton",  sans-serif;
 
 }
+
+/*Landing-wallpaper*/
+.landing-image {
+	  
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: auto;
+	  position: absolute;
+	  background-attachment: fixed;
+}
+
 .title {
-	font-size: 8vh;
+	
+	font-weight: bold;
+	text-align: center;
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+	 color: black;
 }
 
-.subtitle {
-	font-size: 4vh;
+#name {
+	font-family: "Black Ops One", sans-serif !important;
+	font-size: 10vh;
+	padding-bottom: 20px;
+	text-transform: uppercase;
 }
+#role {
+	font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+	#contact-form {
+		width:50%;
+	}
+
+	footer {
+		margin: 0 30% 0;
+
+	}
+	#rcorner1 {
+		border-radius: 15px 50px;
+		border-left: 10px solid darkcyan;
+		border-bottom: 10px solid darkcyan;
+	}
+	#rcorner2 {
+		border-radius: 50px 15px;
+		border-right: 10px solid darkcyan;
+		border-bottom: 10px solid darkcyan;
+	}
+
+
+}
+
+#name, #text-shadow {
+	text-shadow: 2px 2px 5px darkcyan;
+}
+#border-name-custom {
+	border-bottom: 3px solid darkcyan;
+}
+.contact-custom-border {
+	border: 2px solid darkcyan;
+}
+
+.button {
+	 background-color: darkcyan;
+	 border-radius: 12px;
+	 border: none;
+	 color: black;
+	 padding: 15px 32px;
+	 text-align: center;
+	 text-decoration: none;
+	 display: inline-block;
+	 font-size: 16px;
+}
+
+.nav-hover:hover {
+	text-shadow: 2px 2px 3px darkcyan;
+}
+
 
 footer {
-	background-color: #df4759;
-	text-align: center;
 	padding: 1rem;
-	color: white;
-}
-
-#bg-image {
-
+	height: 5vh;
 	width: 100%;
-	height: auto ;
-	background-image: url(https://cdn-media-2.freecodecamp.org/w1280/5f9c9b61740569d1a4ca2b7b.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: inherit;
-}
-
-#back-to-top {
-	text-decoration: none;
 	color: white;
+	background: linear-gradient(to top left, #000000 3%, #009999 100%);
 }
 
-#top-padding {
-	padding: 100px 0px 0px 0px;
+#custom-font {
+	font: 15px Open Sans, sans-serif;
+	
+}
+
+@media screen and (max-width: 768px) {
+	#custom-toggler {
+
+		margin-right: 3rem;
+	}
+}
+
+@media screen and (max-width: 425px) { 
+	#custom-toggler {
+		margin-right: 2rem;
+	}
+
+}
+
+@media screen and (max-width: 1024px) {
+	#custom-navlink {
+		margin-right: 6rem;
+	}
 }
